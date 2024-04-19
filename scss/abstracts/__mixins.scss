@@ -1,0 +1,39 @@
+@mixin respond($breakpoit){
+    @if $breakpoit == phone{
+        @media (max-width: 580px){
+            @content;
+            }
+        }
+        @if $breakpoit ==  tab-port{
+            @media (max-width: 768px){
+                @content;
+            }
+        }
+       
+        @if $breakpoit ==  tab-ipad{
+            @media (max-width: 1040px){
+                @content;
+            }
+        }
+        @if $breakpoit ==  tabb-land{
+            @media (max-width: 1240px){
+                @content;
+            }
+        }
+        @if $breakpoit ==  tab-becstop{
+            @media (max-width: 1640px){
+                @content;
+            }
+        }
+        @if $breakpoit ==   dig-screen{
+            @media (min-width: 1800px){
+                @content;
+            }
+        }
+    }
+   
+
+
+
+
+ 

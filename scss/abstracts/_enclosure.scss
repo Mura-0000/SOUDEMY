@@ -1,0 +1,31 @@
+
+ .container{
+   max-width: 1620px;
+   margin: 0 auto;
+   padding: 0 10px;
+   @include respond ( tab-becstop){
+      max-width: 1240px;
+   }
+   @include respond ( tabb-land){
+      max-width: 1040px;
+   }
+   @include respond ( tab-ipad){
+      max-width: 768px;
+   }
+   @include respond ( tab-port){
+      max-width: 580px;
+   }
+   @include respond (  phone){
+      max-width: 360px;
+   }
+ }
+%myCode{
+   text-transform: uppercase;
+   text-decoration: none;
+   padding: 15px 24px;
+   text-align: center;
+}
+%myCode-a{
+   text-transform: uppercase;
+   text-decoration: none;
+}

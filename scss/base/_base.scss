@@ -1,0 +1,37 @@
+body{
+    background: #212428;
+  
+ }
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 60%;
+ }
+html{
+    font-size: 60%;
+      // 900px
+    @include respond (tab-port){ 
+        font-size: 40%;
+    }
+       // 700px
+       @include respond ( phone){
+        font-size: 40%;
+    }
+        // 1040px
+        @include respond ( tab-ipad){
+     
+        }
+      // 1240px
+    @include respond ( tabb-land){
+        font-size: 40%;
+    }
+     // 1640px
+    @include respond (tab-becstop){
+        font-size: 50%;
+    }
+      // 1800px
+    @include respond (dig-screen){
+        font-size: 61%;
+    }
+}

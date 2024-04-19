@@ -1,0 +1,183 @@
+.from{
+    padding-top: 5rem;
+    @include respond (tab-port){
+        padding-top: 10rem; 
+    }
+}
+.form__row{
+    display: flex;
+    gap: 2.1rem;
+    @include respond ( tab-port){
+        flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 4rem;
+            @include respond (  phone){
+                gap: 6rem;
+            }
+    }
+}
+.form__row-item{
+  display: flex;
+  gap: 1rem;
+  margin: 3rem 0;
+}
+.border-white{
+    border: solid 3px white;
+}
+h6{
+font-size: $font-text;
+font-weight: 500;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: $color-red;
+}
+.form__row-item-icon{
+    margin-left: 1.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.from__span{
+font-size: $text-from;
+font-weight: 400;
+letter-spacing: 0.05em;
+text-transform: capitalize;
+}
+.from-a{
+font-size: $text-from;
+font-weight: 400;
+letter-spacing: 0.05em;
+text-transform: capitalize;
+text-decoration: none;
+color: $color-white;
+@include respond (  tab-ipad){
+    line-height: 1.8rem;
+    width: 12rem;
+}
+}
+.content__from{
+    display: flex;
+    flex-direction: column;
+}
+// form
+.form__input {
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+    font-weight: 400;
+    color:$color-white;
+    border: 4px solid #e40037;
+    border-radius: 15px;
+    padding: 20px;
+    width: 526px;
+    height: 67px;
+    background: transparent;
+    @include respond (tab-becstop){
+        width: 50rem;
+        @include respond (  tabb-land){
+            width: 41.5rem;
+        @include respond (  tab-ipad){
+            width: 30rem;
+            @include respond (tab-port){
+                width: 58rem;
+                @include respond ( phone){
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+    &.form__group-Your-Message{
+    width: 67%;
+    height: 18rem;
+    @include respond (tab-port){
+        width: 83%;
+        @include respond ( phone){
+            width: 100%;
+            }
+        }
+    }
+}
+
+.form__label {
+    font-size: $font-text;
+    letter-spacing: 0.2rem;
+    font-weight: 400;
+    display: block;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    transition: 0.2s all;
+    @include respond (tab-port){
+        margin-top: -5rem;
+        margin-left: 37.5rem;
+        @include respond ( phone){
+            margin-left: 34.5rem;
+        } 
+    }
+  &.form__group-Your-Message{
+    margin-top: -20rem;
+    margin-left: 85.5rem;
+    @include respond (tab-ipad){
+        margin-left: 70rem;
+        @include respond (tab-port){
+            margin-top: -7rem;
+            margin-left: 46rem; 
+            @include respond ( phone){
+                margin-left: 26.5rem;
+                } 
+            }
+         }
+     }
+  }
+  .form__group:not(:last-child) {
+    display: block;
+    margin-left: auto;
+    height: 7rem;
+   cursor: pointer;
+   @include respond ( tab-port){
+    margin: 0 auto;
+   }
+ }
+  .form__group-Your-Message:not(:last-child) {
+    display: block;
+    margin-left: auto;
+    transform: translate(0%,-10rem);
+    @include respond ( tab-port){
+     transform: translate(0%, 1rem);
+     @include respond (tab-port){
+         transform: translate(-4.5%, 3rem);
+         @include respond ( phone){
+            transform: translate(-0.5%, 3rem);
+            }
+        }
+    }
+ }
+
+.form__input:placeholder-shown + .form__label {
+    opacity: 0;
+    visibility: none;
+    transform: translateY(-3rem);
+}
+.from__button{
+    display: block;
+    margin-left: auto;
+    width: 38rem;
+    height: 5rem;
+    @include respond (tab-port){
+        margin-top: 20rem;
+        text-align: center;
+        width: 100%;
+    }
+}
+.phone,.mail,.cardd{
+    transition: all 1s ease;
+}
+.phone.maill,.cardd:hover{
+    background: #828282;
+}
+.from__text-align-center{
+    @include respond (tab-port){
+        margin-bottom: 4rem;
+    }
+}

@@ -1,0 +1,24 @@
+.btn{
+    @extend %myCode;
+    background: $color-red;
+    color:$color-white;
+    font-size: $font-1;
+    border-radius: 15px;
+    @include respond ( tab-port){
+         display: none;
+    }
+    &.from-bth{
+       padding: 2rem 10rem; 
+       color:$color-white;
+       background: $color-red;
+       font-weight: 700;
+       letter-spacing: 0.05em;
+       @include respond ( tab-port){
+        display: block;
+       }
+    }
+    &:hover{
+        background: $color-white;
+        color:  $color-black;
+    }
+}

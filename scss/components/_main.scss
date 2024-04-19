@@ -1,0 +1,162 @@
+main{
+  margin-top: -20rem;
+}
+.text-align-center{
+    text-align: center;
+    margin-bottom: 10rem;
+    @include respond ( phone){
+        margin-bottom: 4rem;
+    }
+}
+h3{
+    font-size: $font-h3;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+    @include respond ( phone){
+        font-size: 2.2rem;
+    }
+}
+.text{
+    font-size: $font-text;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: $color-red;
+    &.text-main{
+    font-family: 'OpenSans' sans-serif;
+    font-weight: 400;
+    font-size:$text-main;
+    color: $color-white;
+    line-height: 157%;
+letter-spacing: 0.06em;
+text-transform: capitalize;
+@include respond (  tab-ipad){
+    width: 160%;
+    line-height: 160%;
+        }
+    }
+}
+
+.main__span{
+    font-size:$span-main;
+    color:  $color-red;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+h4{
+    font-size: $font-h4;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom:10px;
+    @include respond ( tab-ipad){
+        font-size: 3rem;
+        width: 125%;
+    }
+  }
+h5{
+  font-size: $font-h5;
+  color: $color-red;
+}
+.title__main{
+    font-size: $font-h5;
+    color:$color-white;
+}
+.main__row-box,.main__row-box-1 {
+    display: flex;
+    gap: 27rem;
+    @include respond ( tabb-land){
+        gap: 74%;
+        @include respond (  tab-port){
+            gap: 67%;
+            @include respond (  tab-mobail){
+                gap: 62%;
+          }
+        }
+    }
+}
+    .main__row-box-1{
+        gap: 25rem;
+        @include respond ( tabb-land){
+            gap: 65%;
+        }
+        @include respond ( tab-ipad){
+            gap: 68%; 
+            @include respond (  tab-port){
+            gap: 58%;
+             @include respond (  tab-mobail){
+             gap: 52.2%;
+            }
+        }
+    }
+}
+
+.border-red {
+    border:solid 3px  $color-red;
+    width: 35rem;
+    margin-top: 1.5rem;
+    position: relative;
+    z-index: 0;
+    @include respond ( tab-becstop){
+        width: 100%;
+    }
+    @include respond ( tab-ipad){
+        width: 90%;
+    }
+    &::before{
+        content:"";
+        display: block;
+        border-radius:100%;
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        z-index: 1;
+        background: $color-white;
+        border:solid 3px  $color-red;
+        top: -1.3rem;
+        left: 26rem;
+        @include respond ( tabb-land){
+            left: 83%;
+        }
+    }
+}
+    .main__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px 30px;
+        @include respond ( tab-ipad){
+            gap: 30px 19px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+            @include respond ( phone){
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+.content{
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+}
+  .main__img{
+    border-radius: 15px 15px 0px 0px;
+    max-width: 100%;
+    @include respond ( tab-ipad){
+        width: 47;
+        @include respond ( tab-mobail){
+            width: 50vw;
+        }
+    }
+  }
+.content-box{
+    padding: 17px 15px;
+    max-width: 100%;
+    @include respond ( tab-ipad){
+        width: 62%;
+        padding: 17px 8px;
+        @include respond ( tab-mobail){
+          
+            padding: 17px 10px;
+        }
+    }
+}
+
+
