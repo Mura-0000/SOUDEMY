@@ -48,11 +48,15 @@ letter-spacing: 0.05em;
 text-transform: capitalize;
 text-decoration: none;
 color: $color-white;
+&:hover{
+    color:  $color-red;
+}
 @include respond (  tab-ipad){
     line-height: 1.8rem;
     width: 12rem;
 }
 }
+
 .content__from{
     display: flex;
     flex-direction: column;

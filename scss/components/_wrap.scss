@@ -115,7 +115,7 @@
     top: 50rem;
     left: 0rem;
     max-width: 100%;
-    text-shadow: #e40037 0px 0 5px;
+    text-shadow:  $color-red 0px 0 5px;
         @include respond ( tab-becstop)  {
         font-size: 11rem;
         left: 17rem;
@@ -129,8 +129,8 @@
         left: 15rem;
         top: 28rem;
     @include respond (phone){
-        font-size: 3.5rem;
-        left: 12rem;
+        font-size: 3.7rem;
+        left: 11rem;
         top: 22rem;
                         }
                     }

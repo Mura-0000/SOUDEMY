@@ -9,7 +9,20 @@
     @include respond ( tabb-land){
         gap: 14rem;
         @include respond ( tab-ipad){
-            gap: 59rem;
+            gap: 28rem;
+        }
+        @include respond ( tab-port){
+            gap: 0rem;
+        }
+    }
+}
+
+&__item{
+    @include respond ( tab-ipad){
+        position: relative;
+        left: 8rem;
+         @include respond ( tab-port){
+         left: 15rem;
         }
     }
 }

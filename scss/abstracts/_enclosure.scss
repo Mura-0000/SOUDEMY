@@ -18,7 +18,6 @@
    @include respond (  phone){
       max-width: 360px;
    }
- }
 %myCode{
    text-transform: uppercase;
    text-decoration: none;
@@ -28,4 +27,5 @@
 %myCode-a{
    text-transform: uppercase;
    text-decoration: none;
+}
 }

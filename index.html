@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="sass/app.css">
+    <!-- <link rel="stylesheet" href="sass/app.css"> -->
     <link rel="stylesheet" href="scss/stail.css">
    
     <script src="script.js" defer></script>
@@ -18,30 +18,6 @@
   <!-- header -->
   <header class="header">
      <div class="container">
-      <div class="navigation">
-        <input type="checkbox" class="navigation__toggle" id="navin-toggle">
-        <label for="navin-toggle" class="navigation__button">
-            <span class="navigation__icon"></span>
-        </label>
-        <div class="navigation__background"></div>
-           
-        <nav class="navigation__nav">
-          <ul class="navigation__iconn">
-            <li><a href="#"><img src="icon/Twitter.svg" alt="Twitter"></a></li>
-            <li><a href="#"><img src="icon/LinkedIn.svg" alt="LinkedIn"></a></li>
-            <li><a href="#"><img src="icon/ytud.svg" alt="ytud"></a></li>
-            <li><a href="#"><img src="icon/Github.svg" alt="Github"></a></li>
-          </ul>
-            <ul class="navigation__list">
-                <li class="navigation__item"><a href="#" class="navigation__link">ABOUT</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">SKILLS</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">PORTFOLIO</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">TESTIMONIALS</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">CONTACT</a></li>
-                <li class="navigation__item__navigation__buttonn"><a href="#" class="navigation__link__navigation__btn">DOWNLOAD CV</a></li>
-            </ul> 
-        </nav>
-    </div>
         <div class="header">
             <div class="header__item">
                 <a href="#" class="header__logo">SOUDEMY</a>
@@ -53,7 +29,29 @@
                 <li><a href="#">TESTIMONIALS</a></li>
                 <li><a href="#">CONTACT</a></li>
             </ul>
-            
+            <!-- menu--byrgera -->
+            <div class="hamburger-menu">
+              <input id="menu__toggle" type="checkbox" />
+              <label class="menu__btn" for="menu__toggle">
+                <span></span>
+              </label>
+          
+              <ul class="menu__box">
+                <ul class="menu__box__icon">
+                  <li><a href="#"><img src="icon/Twitter.svg" alt="Twitter"></a></li>
+                  <li><a href="#"><img src="icon/LinkedIn.svg" alt="LinkedIn"></a></li>
+                  <li><a href="#"><img src="icon/ytud.svg" alt="ytud"></a></li>
+                  <li><a href="#"><img src="icon/Github.svg" alt="Github"></a></li>
+                </ul>
+                <li><a class="menu__item" href="#">ABOUT</a></li>
+                <li><a class="menu__item" href="#">SKILLS</a></li>
+                <li><a class="menu__item" href="#">PORTFOLIO</a></li>
+                <li><a class="menu__item" href="#">TESTIMONIALS</a></li>
+                <li><a class="menu__item" href="#">CONTACT</a></li>
+                <li class="menu__item__menu__bthh"><a class="menu__item__menu__bthh" href="#">DOWNLOAD CV</a></li>
+              
+              </ul>
+            </div>
             <div class="header__buttun">
               <a href="#" class="btn">DOWNLOAD CV</a>
             </div>
