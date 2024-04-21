@@ -70,14 +70,32 @@
   list-style: none;
   width: 100%;
 }
+.navigation .navigation__link__navigation__btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 20px 85px;
+  text-align: center;
+  background: red;
+  color: white;
+  font-size: 3rem;
+  border-radius: 15px;
+}
+.navigation .navigation__link__navigation__btn:hover {
+  background: white;
+  color: red;
+}
 .navigation__item {
   text-align: center;
 }
 .navigation__item:not(:last-child) {
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
+}
+.navigation .navigation__item__navigation__buttonn {
+  text-align: center;
+  padding-top: 4rem;
 }
 .navigation__link:link, .navigation__link:visited {
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: white;
   letter-spacing: 0.5rem;
   text-decoration: none;
@@ -88,36 +106,7 @@
   transition: all 0.4s;
   display: inline-block;
 }
-.navigation__text-align-center {
-  position: fixed;
-  top: 73rem;
-  right: 50rem;
-}
-@media (max-width: 700px) {
-  .navigation__text-align-center {
-    right: 26rem;
-  }
-}
-@media (max-width: 460px) {
-  .navigation__text-align-center {
-    right: 10rem;
-  }
-}
-.navigation__btn {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 20px 60px;
-  text-align: center;
-  background: #E40037;
-  color: #FFFFFF;
-  font-size: 2rem;
-  border-radius: 15px;
-}
-.navigation__btn:hover {
-  background: white;
-  color: red;
-}
-.navigation__btn:hover:hover, .navigation__btn:hover:active {
+.navigation__link:hover, .navigation__link:active {
   background-position: 100%;
   color: red;
   transform: translateX(1rem);

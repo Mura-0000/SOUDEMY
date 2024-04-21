@@ -355,6 +355,7 @@ html {
   top: 50rem;
   left: 0rem;
   max-width: 100%;
+  text-shadow: #e40037 0px 0 5px;
 }
 @media (max-width: 1640px) {
   .disprepgin {
@@ -1025,8 +1026,22 @@ h6 {
   transition: all 1s ease;
 }
 
-.phone.maill, .cardd:hover {
-  background: #828282;
+.cardd:hover {
+  background-color: rgb(226, 226, 226);
+}
+
+.mail:hover {
+  background-color: rgb(226, 226, 226);
+}
+
+.phone {
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.phone:hover {
+  background-color: rgb(226, 226, 226);
 }
 
 @media (max-width: 768px) {

@@ -59,14 +59,28 @@
         transform: translate(-50%, -50%)
         list-style: none
         width: 100%
-        
+    .navigation__link__navigation__btn
+        text-transform: uppercase
+        text-decoration: none
+        padding: 20px 85px
+        text-align: center
+        background: red
+        color: white
+        font-size: 3rem
+        border-radius: 15px
+        &:hover
+            background: white
+            color: red      
     &__item
         text-align: center
         &:not(:last-child)
-            margin-bottom: 5rem
+            margin-bottom: 4rem
+    .navigation__item__navigation__buttonn
+        text-align: center
+        padding-top: 4rem
     &__link
         &:link, &:visited    
-            font-size: 4rem
+            font-size: 3.5rem
             color: white
             letter-spacing: .5rem
             text-decoration: none
@@ -76,29 +90,6 @@
             padding: 1rem 2rem
             transition: all .4s
             display: inline-block
-        
-          
-    &__text-align-center
-        position: fixed
-        top: 73rem
-        right: 50rem
-        @media (max-width: 700px)
-            right: 26rem     
-        @media (max-width: 460px)
-            right: 10rem     
-    &__btn
-        text-transform: uppercase
-        text-decoration: none
-        padding: 20px 60px
-        text-align: center
-        background: #E40037
-        color: #FFFFFF
-        font-size: 2rem
-        border-radius: 15px
- 
-    &__btn:hover
-        background: white
-        color: red       
         &:hover, &:active
             background-position: 100%
             color: red

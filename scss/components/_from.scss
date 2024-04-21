@@ -163,8 +163,19 @@ color: $color-white;
 .phone,.mail,.cardd{
     transition: all 1s ease;
 }
-.phone.maill,.cardd:hover{
-    background: #828282;
+.cardd:hover{
+    background-color: rgb(226 226 226);
+}
+.mail:hover{
+    background-color: rgb(226 226 226);
+}
+.phone{
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+.phone:hover{
+    background-color: rgb(226 226 226);
 }
 .from__text-align-center{
     @include respond (tab-port){

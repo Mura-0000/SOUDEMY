@@ -115,7 +115,8 @@
     top: 50rem;
     left: 0rem;
     max-width: 100%;
-    @include respond ( tab-becstop)  {
+    text-shadow: #e40037 0px 0 5px;
+        @include respond ( tab-becstop)  {
         font-size: 11rem;
         left: 17rem;
      @include respond ( tabb-land)  {
