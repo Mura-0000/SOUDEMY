@@ -11,10 +11,7 @@
         flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 4rem;
-            @include respond (  phone){
-                gap: 6rem;
-            }
+            gap: 6rem;
     }
 }
 .form__row-item{
@@ -81,7 +78,7 @@ color: $color-white;
             @include respond (tab-port){
                 width: 58rem;
                 @include respond ( phone){
-                    width: 100%;
+                   width: 43rem;
                 }
             }
         }
@@ -108,20 +105,13 @@ color: $color-white;
     margin-top: 1rem;
     margin-left: 1.5rem;
     transition: 0.2s all;
-    @include respond (tab-port){
-        margin-top: -5rem;
-        margin-left: 37.5rem;
-        @include respond ( phone){
-            margin-left: 34.5rem;
-        } 
-    }
   &.form__group-Your-Message{
     margin-top: -20rem;
     margin-left: 85.5rem;
     @include respond (tab-ipad){
         margin-left: 70rem;
         @include respond (tab-port){
-            margin-top: -7rem;
+            margin-top: -10rem;
             margin-left: 46rem; 
             @include respond ( phone){
                 margin-left: 26.5rem;
@@ -146,10 +136,10 @@ color: $color-white;
     @include respond ( tab-port){
      transform: translate(0%, 1rem);
      @include respond (tab-port){
-         transform: translate(-4.5%, 3rem);
-         @include respond ( phone){
-            transform: translate(-0.5%, 3rem);
-            }
+         transform: translate(-4.5%, 0rem);
+        }
+     @include respond (phone){
+         transform: translate(0%, 0rem);
         }
     }
  }

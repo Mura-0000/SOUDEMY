@@ -1,5 +1,8 @@
 main{
-  margin-top: -20rem;
+  margin-top: -70rem;
+  @include respond (  tab-ipad){
+    margin-top: -100rem;
+  }
 }
 .text-align-center{
     text-align: center;
@@ -68,10 +71,8 @@ h5{
     @include respond ( tabb-land){
         gap: 74%;
         @include respond (  tab-port){
-            gap: 67%;
-            @include respond (  tab-mobail){
-                gap: 62%;
-          }
+            gap: 72.5%;
+      
         }
     }
 }
@@ -83,10 +84,8 @@ h5{
         @include respond ( tab-ipad){
             gap: 68%; 
             @include respond (  tab-port){
-            gap: 58%;
-             @include respond (  tab-mobail){
-             gap: 52.2%;
-            }
+            gap: 66.5%;
+         
         }
     }
 }

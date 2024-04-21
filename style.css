@@ -23,7 +23,11 @@
   right: -18px;
 }
 @media screen and (max-width: 1040px) {
-  .wrapper i:last-child,.wrapper i:last-child,.wrapper i:first-child {
-    display: none;
+  .wrapper i:first-child{
+    left: -10px;
   }
+  .wrapper i:last-child{
+    right: -10px;
+  }
+   
 }

@@ -1,10 +1,7 @@
 .section{
-    padding: 50rem 0;
-    @include respond ( tab-ipad){
+    padding: 40rem 0;
+    @include respond ( tabb-land){
         padding: 30rem 0;
-        @include respond ( phone){
-            padding: 25rem 0;
-        } 
     }
 }
 .wrap{
@@ -12,22 +9,25 @@
     top: 0;
     left: 0;
     transform: translate(4%, -50%);
-    max-width: 90%;
+    overflow: hidden;
+    height: 87rem;
     @include respond ( tab-becstop){
-        transform: translate(4%, -140%);
+        transform: translate(0%, -50%);
     }
-    @include respond ( tab-ipad){
-        transform: translate(4%, -200%);
-        @include respond ( tab-port){
-            transform: translate(4%, -150%);
-            @include respond ( tabb-land){
-                transform: translate(4%, -70%);
-            }
-            @include respond ( phone){
-                transform: translate(4%, -323%);
-            }
+    @include respond ( tabb-land){
+        transform: translate(-7%, -60%);
+    }
+    @include respond (  tab-ipad){
+         transform: translate(-10%, -60%);
+     @include respond (  tab-port){
+        transform: translate(-7%, -40%);
+         @include respond ( phone){
+            transform: translate(-20%, -35%);
+            width: 120%;
+            height: 83rem;
         }
-    }
+     }     
+    }  
   &__img{
     border-radius: 100%;
     border: 35px solid #E40037;
@@ -37,40 +37,37 @@
     z-index: 0;
     left: 0;
     top: 0;
-    transform: translate(50%, -50%);
-    @include respond ( tabb-land){
-        transform: translate(30%, -50%);
-        @include respond (  tab-ipad){
-            transform: translate(29%, -50%);
-            width: 66%;
-            height: 50rem;
-            @include respond ( tab-port){
-                transform: translate(38%, -50%);
-                width: 60%;
-                height: 38rem;
-                @include respond ( tabb-land){
-                    transform: translate(38%, -50%);
-                width: 60%;
-                height: 25rem;
-                border: 24px solid #E40037;
-                }
+    transform: translate(50%, 15%);
+    @include respond ( tab-ipad){
+        width: 56rem;
+        height: 51rem;
+        @include respond (  tab-port){
+            width: 43rem;
+            height: 41rem;
+            }
+        @include respond (  phone){
+            width: 32rem;
+            height: 30rem;
+            border: 25px solid #E40037;
             }
         }
     }
-  }
 }
 .box_blur{
     position: absolute;
     z-index: -1;
     top: 0;
     left: 0;
-    transform: translate(31%, -50%);
+    transform: translate(32%, 1%);
+    width: 56%;
   @include respond (tab-becstop){
-    transform: translate(28%, -50%);
-    width: 70%;
+    width: 61%;
     @include respond ( tabb-land){
-        transform: translate(16%, -50%);
-        width: 80%;
+        width: 73%;
+        @include respond (  tab-port){
+            width: 78%;
+    transform: translate(30%, 2%);
+        }
     }
   }
 }
@@ -80,7 +77,7 @@
     text-transform: uppercase;
     font-weight: 700;
     position: absolute;
-    top: -16rem;
+    top: 28rem;
     left: 12rem;
     z-index: -1;
     letter-spacing: 0.05em;
@@ -88,21 +85,20 @@
     @include respond ( tab-becstop)  {
         font-size: 12rem;
         left: 17rem;
+        top: 30rem;
     @include respond ( tabb-land)  {
-        font-size: 11rem;
-        left: 6rem;
+        font-size: 11.5rem;
         @include respond (  tab-ipad){
             font-size: 8rem;
-            top: -10rem;
-            left: 5rem;
+            top: 22rem;
             @include respond ( tab-port){
-                font-size: 5.5rem;
-                left: 7rem;
-                top: -8rem;
+                font-size: 5.8rem;
+                left: 14rem;
+                top: 17rem;
                 @include respond ( phone){
-                    font-size: 3.5rem;
-                    left: 4.5rem;
-                    top: -5rem;
+                    font-size: 4.3rem;
+                    left: 10rem;
+                    top: 14rem;
                     }
                 }
             }
@@ -112,31 +108,29 @@
 .disprepgin{
     --font-family: "Poppins", sans-serif;
     font-weight: 700;
-    font-size: $font-h2;
+    font-size: 14rem;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    position: relative;
-    top: 12rem;
+    position: absolute;
+    top: 50rem;
     left: 0rem;
-    max-width: 93%;
+    max-width: 100%;
     @include respond ( tab-becstop)  {
         font-size: 11rem;
         left: 17rem;
-        top: 5rem;
-        @include respond ( tabb-land)  {
-            font-size: 10rem;
-            left: 5rem;
-            @include respond (  tab-ipad){
-                font-size: 7.3rem;
-                left: 4.5rem;
-                @include respond ( tab-port){
-                    font-size: 5rem;
-                    left: 7rem;
-                    top: 2rem;
-                    @include respond (phone){
-                        font-size: 3rem;
-                        left: 5rem;
-                        top: 2rem;
+     @include respond ( tabb-land)  {
+        font-size: 10.4rem;
+     @include respond (  tab-ipad){
+        font-size: 7.2rem;
+        top: 38rem;
+     @include respond ( tab-port){
+        font-size: 5rem;
+        left: 15rem;
+        top: 28rem;
+    @include respond (phone){
+        font-size: 3.5rem;
+        left: 12rem;
+        top: 22rem;
                         }
                     }
                 }
@@ -150,25 +144,28 @@
     font-weight: 500;
     --font-family: "Poppins", sans-serif;
     position: absolute;
-    top: -25rem;
+    top: 23rem;
     left: 5rem;
     z-index: 1;
-    @include respond ( tabb-land){
-        left: 0rem;
         @include respond ( tabb-land){
-            font-size: 2rem;
+            font-size: 2.8rem;
+            left: 8.7rem;
+            @include respond (  tab-ipad){
+                font-size: 2.2rem;
+                top: 15rem;
+            }
             @include respond ( tab-port){
-                top: -15rem;
-                font-size: 1.6rem;
+                top: 11rem;
+                font-size: 2rem;
+                left: 5rem;
                 @include respond ( phone){
-                    left: -2rem;
-                    top: -9rem;
+                    left: 10rem;
+                    top: 6rem;
                     font-size: 1.2rem;
                 }
             }
         }
     }
-}
 .icon{
     display: block;
     margin-left: auto;
@@ -183,8 +180,9 @@ flex-direction: column;
 gap: 30px;
 transform: translate(-10rem, -25rem);
 @include respond ( tab-ipad){
-    transform: translate(-10rem, -27rem);
+    transform: translate(-10rem, -30rem);
     gap: 25px;
+
 } 
 }
 li.section__icon,li.section__iconn{
@@ -201,7 +199,7 @@ li.section__icon,li.section__iconn{
 }
 li.section__iconn{
     width: 35px;
-    height: 28px;
+    height: 27px;
 }
 .Twitter{
  background: url(../icon/Twitter.svg);

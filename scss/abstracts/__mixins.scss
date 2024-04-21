@@ -1,9 +1,15 @@
 @mixin respond($breakpoit){
+    @if $breakpoit == min-phone{
+        @media (max-width: 360px){
+            @content;
+            }
+        }
     @if $breakpoit == phone{
         @media (max-width: 580px){
             @content;
             }
         }
+  
         @if $breakpoit ==  tab-port{
             @media (max-width: 768px){
                 @content;
